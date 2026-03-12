@@ -1,0 +1,147 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ── Finosper Design Tokens ── */
+:root {
+  --radius: 0.75rem;
+
+  /* Brand Colors */
+  --navy: #0f1b3d;
+  --navy-light: #1a2d5a;
+  --navy-dark: #0a1229;
+  --charcoal: #2c2c2c;
+  --charcoal-light: #3d3d3d;
+  --gold: #c5a55a;
+  --gold-light: #d4b96e;
+  --gold-dark: #a88b3d;
+  --white: #ffffff;
+  --off-white: #f8f9fc;
+  --light-gray: #eef1f6;
+
+  /* shadcn Overrides – Light Mode */
+  --background: #f8f9fc;
+  --foreground: #0f1b3d;
+  --card: #ffffff;
+  --card-foreground: #0f1b3d;
+  --popover: #ffffff;
+  --popover-foreground: #0f1b3d;
+  --primary: #0f1b3d;
+  --primary-foreground: #ffffff;
+  --secondary: #eef1f6;
+  --secondary-foreground: #0f1b3d;
+  --muted: #eef1f6;
+  --muted-foreground: #5a6178;
+  --accent: #c5a55a;
+  --accent-foreground: #0f1b3d;
+  --destructive: #dc2626;
+  --border: #d9dde6;
+  --input: #d9dde6;
+  --ring: #c5a55a;
+
+  /* Charts */
+  --chart-1: #0f1b3d;
+  --chart-2: #c5a55a;
+  --chart-3: #1a2d5a;
+  --chart-4: #d4b96e;
+  --chart-5: #5a6178;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Brand scale exposed to Tailwind */
+  --color-navy: var(--navy);
+  --color-navy-light: var(--navy-light);
+  --color-navy-dark: var(--navy-dark);
+  --color-charcoal: var(--charcoal);
+  --color-charcoal-light: var(--charcoal-light);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-dark: var(--gold-dark);
+  --color-off-white: var(--off-white);
+  --color-light-gray: var(--light-gray);
+
+  /* Fonts */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+  --font-mono: var(--font-geist-mono);
+
+  /* Radii */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+
+  /* Shadows */
+  --shadow-soft: 0 2px 15px -3px rgba(15, 27, 61, 0.07),
+    0 10px 20px -2px rgba(15, 27, 61, 0.04);
+  --shadow-card: 0 1px 3px 0 rgba(15, 27, 61, 0.06),
+    0 1px 2px -1px rgba(15, 27, 61, 0.06);
+  --shadow-elevated: 0 10px 40px -10px rgba(15, 27, 61, 0.12),
+    0 4px 6px -2px rgba(15, 27, 61, 0.05);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-serif tracking-tight text-navy;
+  }
+
+  h1 {
+    @apply text-4xl font-bold leading-tight md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl font-bold md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl font-semibold;
+  }
+
+  h4 {
+    @apply text-xl font-semibold;
+  }
+
+  ::selection {
+    background-color: var(--gold);
+    color: var(--navy-dark);
+  }
+}
