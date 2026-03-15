@@ -13,7 +13,7 @@ const contactInfo = [
         icon: MapPin,
         title: "Office Location",
         details: siteConfig.contact.address,
-        link: "https://maps.google.com/?q=Kanpur,Uttar+Pradesh,India",
+        link: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.5925254415642!2d80.3196873!3d26.4688605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c39df263c4123%3A0xeb4b66864eb818b2!2sFinosper.in%20-%20ITR%20Filing%20GST%20registration%20Company%20incorporation!5e0!3m2!1sen!2sin!4v1773595485542!5m2!1sen!2sin",
     },
     {
         icon: Phone,
