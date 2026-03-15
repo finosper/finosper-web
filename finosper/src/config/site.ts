@@ -3,20 +3,20 @@ export const siteConfig = {
   tagline: "Trusted Financial Expertise",
   description:
     "Finosper — Professional Chartered Accountancy services by CA Shrish Tiwari. Tax planning, GST compliance, auditing, and business advisory in Kanpur, Uttar Pradesh.",
-  url: "https://finosper.com",
+  url: "https://finosper.in",
   ogImage: "/og-image.png",
   caName: "CA Shrish Tiwari",
   location: "Kanpur, Uttar Pradesh, India",
   bookingUrl: "https://topmate.io/placeholder", // Replace with actual Topmate link
   contact: {
-    email: "contact@finosper.com",
-    phone: "+91 98765 43210",
-    address: "123 Financial District, Mall Road, Kanpur, Uttar Pradesh 208001",
+    email: "finosper.ho@gmail.com",
+    phone: "+91 84005 00791",
+    address: "110/223 Jawahar Nagar Kanpur 208012",
   },
   socials: {
-    linkedin: "https://linkedin.com/in/placeholder",
-    twitter: "https://twitter.com/placeholder",
-    instagram: "https://instagram.com/placeholder",
+    linkedin: "https://www.linkedin.com/company/finosper?originalSubdomain=in",
+    twitter: "https://twitter.com",
+    instagram: "https://instagram.com",
   },
   navLinks: [
     { label: "Home", href: "/" },
