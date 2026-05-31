@@ -7,7 +7,8 @@ export const siteConfig = {
   ogImage: "/og-image.png",
   caName: "CA Shrish Tiwari",
   location: "Kanpur, Uttar Pradesh, India",
-  bookingUrl: "https://topmate.io/placeholder", // Replace with actual Topmate link
+  bookingUrl: "/booking", 
+  topmateUrl: "https://topmate.io/finosper/2127947",
   contact: {
     email: "finosper.ho@gmail.com",
     phone: "+91 84005 00791",
