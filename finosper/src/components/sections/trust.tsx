@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Shield, FileText, Rocket, Globe } from "lucide-react";
-import { fadeInUp, staggerContainer, scaleIn } from "@/config/animations";
+import { staggerContainer, scaleIn } from "@/config/animations";
 
 const trustItems = [
     {
