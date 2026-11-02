@@ -9,8 +9,6 @@ import {
     Sparkles,
     ArrowRight,
     Clock,
-    FileCheck2,
-    AlertCircle,
     Building2,
     Briefcase,
     Laptop,
