@@ -1,8 +1,8 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Phone, MessageCircle, Calendar, Plus, X } from "lucide-react";
+import { motion } from "framer-motion";
+import { Phone, MessageCircle, Calendar, X } from "lucide-react";
 import { siteConfig } from "@/config/site";
 
 const actions = [
@@ -20,14 +20,13 @@ const actions = [
     },
     {
         icon: Calendar,
-        label: "Book Consultation",
+        label: "Book 1:1 Session (₹499)",
         href: "/booking",
         color: "bg-gold",
     },
 ];
 
 export default function SpeedDial() {
-    const isOpen = true;
     const containerRef = useRef<HTMLDivElement>(null);
 
     return (

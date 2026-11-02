@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { servicesData, getServiceBySlug, getAllServiceSlugs } from "@/data/services";
+import { getServiceBySlug, getAllServiceSlugs } from "@/data/services";
 import ServicePage from "@/components/services/service-page";
 import { siteConfig } from "@/config/site";
 

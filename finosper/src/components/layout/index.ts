@@ -1,3 +1,5 @@
 export { default as Header } from "./header";
 export { default as Footer } from "./footer";
 export { default as PageTransition } from "./page-transition";
+export { default as ConsultationPopup } from "./consultation-popup";
+

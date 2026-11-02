@@ -2,8 +2,6 @@ import PageHeader from "@/components/layout/page-header";
 import { siteConfig } from "@/config/site";
 
 export default function PrivacyPolicyPage() {
-    const currentYear = new Date().getFullYear();
-
     return (
         <div className="bg-white">
             <PageHeader

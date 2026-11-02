@@ -100,16 +100,12 @@ export default function Header() {
                     <Button
                         asChild
                         size="sm"
-                        className="hidden rounded-lg bg-gold px-5 font-semibold text-navy hover:bg-gold-light shadow-sm transition-all hover:shadow-md sm:inline-flex"
+                        className="hidden rounded-lg bg-gold px-4 font-semibold text-navy hover:bg-gold-light shadow-sm transition-all hover:shadow-md sm:inline-flex"
                     >
-                        <a
-                            href={siteConfig.bookingUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Phone className="mr-2 h-4 w-4" />
-                            Book Consultation
-                        </a>
+                        <Link href={siteConfig.bookingUrl}>
+                            <Phone className="mr-1.5 h-3.5 w-3.5" />
+                            Book 1:1 (₹499)
+                        </Link>
                     </Button>
 
                     {/* Mobile Menu */}
@@ -182,14 +178,13 @@ export default function Header() {
                                         asChild
                                         className="w-full rounded-lg bg-gold font-semibold text-navy hover:bg-gold-light"
                                     >
-                                        <a
+                                        <Link
                                             href={siteConfig.bookingUrl}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
+                                            onClick={() => setMobileOpen(false)}
                                         >
                                             <Phone className="mr-2 h-4 w-4" />
-                                            Book Consultation
-                                        </a>
+                                            Book 1:1 Consultation (₹499)
+                                        </Link>
                                     </Button>
                                     <p className="mt-3 text-center text-xs text-muted-foreground">
                                         {siteConfig.caName} · {siteConfig.location}

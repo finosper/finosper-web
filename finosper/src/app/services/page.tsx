@@ -107,7 +107,7 @@ export default function ServicesPage() {
                         Not Sure Which Service You Need?
                     </h2>
                     <p className="mx-auto mt-4 max-w-xl text-white/60">
-                        Book a free consultation and we&apos;ll help you identify the right services
+                        Book a 1:1 strategy consultation with {siteConfig.caName} for ₹499 (was ₹1,999) and we&apos;ll help you identify the right path
                         for your specific financial and compliance needs.
                     </p>
                     <div className="mt-8">
@@ -116,9 +116,9 @@ export default function ServicesPage() {
                             size="lg"
                             className="group rounded-xl bg-gold px-10 py-6 text-base font-semibold text-navy shadow-lg hover:bg-gold-light hover:shadow-xl hover:shadow-gold/20"
                         >
-                            <a href={siteConfig.bookingUrl} target="_blank" rel="noopener noreferrer">
+                            <a href={siteConfig.bookingUrl}>
                                 <Phone className="mr-2 h-4 w-4" />
-                                Book Consultation
+                                Book 1:1 Session (₹499)
                                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                             </a>
                         </Button>

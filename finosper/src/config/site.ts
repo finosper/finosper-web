@@ -9,6 +9,16 @@ export const siteConfig = {
   location: "Kanpur, Uttar Pradesh, India",
   bookingUrl: "/booking", 
   topmateUrl: "https://topmate.io/finosper/2127947",
+  consultation: {
+    price: 499,
+    originalPrice: 1999,
+    discount: "75% OFF",
+    duration: "30 Mins",
+    currency: "₹",
+    headline: "1:1 Strategic CA Consultation with CA Shrish Tiwari",
+    topmateUrl: "https://topmate.io/finosper/2127947",
+    guarantee: "100% of this ₹499 fee is credited back when you take any filing or registration service with Finosper.",
+  },
   contact: {
     email: "finosper.ho@gmail.com",
     phone: "+91 84005 00791",

@@ -19,8 +19,8 @@ const steps = [
     {
         icon: CalendarCheck,
         step: "02",
-        title: "Book Consultation",
-        description: "Schedule a free consultation at your convenient time slot.",
+        title: "Book 1:1 Consultation",
+        description: "Schedule your dedicated session for ₹499 (was ₹1,999) on Topmate.",
     },
     {
         icon: HeadphonesIcon,

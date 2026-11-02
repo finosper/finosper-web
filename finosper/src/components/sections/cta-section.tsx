@@ -49,8 +49,8 @@ export default function CTASection() {
                     variants={fadeInUp}
                     className="mx-auto mt-5 max-w-xl text-white/60 leading-relaxed"
                 >
-                    Book a free consultation with {siteConfig.caName} and take the first
-                    step towards financial clarity and compliance peace of mind.
+                    Book a focused 1:1 strategy consultation with {siteConfig.caName} for just ₹499 (was ₹1,999)
+                    and take the first step towards complete financial clarity and tax savings.
                 </motion.p>
 
                 <motion.div
@@ -64,11 +64,9 @@ export default function CTASection() {
                     >
                         <a
                             href={siteConfig.bookingUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
                         >
                             <Phone className="mr-2 h-4 w-4" />
-                            Book Consultation
+                            Book 1:1 Session
                             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                         </a>
                     </Button>
@@ -86,9 +84,9 @@ export default function CTASection() {
                 {/* Trust note */}
                 <motion.p
                     variants={fadeInUp}
-                    className="mt-8 text-xs text-white/40"
+                    className="mt-8 text-xs text-white/60"
                 >
-                    Free 15-minute consultation · No hidden charges · 100% confidential
+                    1:1 Private CA Session · 100% of ₹499 Credited on Any Filing Service · 100% Confidential
                 </motion.p>
             </motion.div>
         </section>

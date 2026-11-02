@@ -6,7 +6,6 @@ import PageHeader from "@/components/layout/page-header";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 import { fadeInUp, staggerContainer } from "@/config/animations";
-import Image from "next/image";
 
 const contactInfo = [
     {

@@ -318,7 +318,7 @@ export default function ServicePage({ service }: ServicePageProps) {
                         Need Professional Assistance with {service.title}?
                     </motion.h2>
                     <motion.p variants={fadeInUp} className="mx-auto mt-4 max-w-xl text-white/60 leading-relaxed">
-                        Book a free consultation with {siteConfig.caName} and let us handle
+                        Book a 1:1 strategy consultation with {siteConfig.caName} for ₹499 (was ₹1,999) and let us handle
                         the complexities while you focus on growing your business.
                     </motion.p>
                     <motion.div variants={fadeInUp} className="mt-8">
@@ -327,15 +327,15 @@ export default function ServicePage({ service }: ServicePageProps) {
                             size="lg"
                             className="group rounded-xl bg-gold px-10 py-6 text-base font-semibold text-navy shadow-lg transition-all hover:bg-gold-light hover:shadow-xl hover:shadow-gold/20"
                         >
-                            <a href={siteConfig.bookingUrl} target="_blank" rel="noopener noreferrer">
+                            <a href={siteConfig.bookingUrl}>
                                 <Phone className="mr-2 h-4 w-4" />
-                                Book Consultation
+                                Book 1:1 Session (₹499)
                                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                             </a>
                         </Button>
                     </motion.div>
-                    <motion.p variants={fadeInUp} className="mt-6 text-xs text-white/40">
-                        Free 15-minute consultation · No hidden charges · 100% confidential
+                    <motion.p variants={fadeInUp} className="mt-6 text-xs text-white/60">
+                        1:1 Private CA Session · 100% of ₹499 Credited on Any Service · 100% Confidential
                     </motion.p>
                 </motion.div>
             </section>

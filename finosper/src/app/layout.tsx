@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
-import { Header, Footer, PageTransition } from "@/components/layout";
+import { Header, Footer, PageTransition, ConsultationPopup } from "@/components/layout";
 import SpeedDial from "@/components/layout/speed-dial";
 import NextTopLoader from "nextjs-toploader";
 import { siteConfig } from "@/config/site";
@@ -25,6 +25,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: `${siteConfig.name} | Professional CA Consultancy in Kanpur`,
     template: `%s | ${siteConfig.name}`,
@@ -133,6 +134,7 @@ export default function RootLayout({
           <Footer />
         </div>
         <SpeedDial />
+        <ConsultationPopup />
       </body>
     </html>
   );

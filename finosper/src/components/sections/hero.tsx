@@ -1,7 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, ChevronRight } from "lucide-react";
+import { ArrowRight, ChevronRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 import { fadeInUp, staggerContainer } from "@/config/animations";
@@ -36,14 +37,23 @@ export default function Hero() {
                 animate="visible"
                 className="relative mx-auto max-w-7xl px-4 pb-20 pt-24 sm:px-6 sm:pb-28 sm:pt-32 lg:px-8 lg:pb-36 lg:pt-40"
             >
-                {/* CA Badge */}
-                <motion.div variants={fadeInUp} className="flex justify-center mb-6">
+                {/* Marketing & CA Badges */}
+                <motion.div variants={fadeInUp} className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center mb-6">
                     <div className="inline-flex items-center gap-2 rounded-full border border-gold/20 bg-gold/10 px-4 py-1.5 backdrop-blur-sm">
                         <div className="h-1.5 w-1.5 rounded-full bg-gold animate-pulse" />
                         <span className="text-xs font-medium tracking-wide text-gold">
                             {siteConfig.caName} · {siteConfig.location}
                         </span>
                     </div>
+
+                    <Link
+                        href="/booking"
+                        className="inline-flex items-center gap-1.5 rounded-full border border-gold/40 bg-gold/20 px-3.5 py-1 text-xs font-semibold text-gold transition-all hover:bg-gold/30 hover:border-gold/60"
+                    >
+                        <Sparkles className="h-3.5 w-3.5 text-gold animate-pulse" />
+                        <span>1:1 CA Consultation at ₹499 (Save 75%)</span>
+                        <ArrowRight className="h-3 w-3" />
+                    </Link>
                 </motion.div>
 
                 {/* Headline */}
@@ -87,10 +97,8 @@ export default function Hero() {
                     >
                         <a
                             href={siteConfig.bookingUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
                         >
-                            Book Consultation
+                            Book 1:1 Session
                             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                         </a>
                     </Button>
@@ -101,10 +109,10 @@ export default function Hero() {
                         size="lg"
                         className="group rounded-xl border-white/15 bg-white/5 px-8 py-6 text-base text-white backdrop-blur-sm hover:bg-white/10 hover:text-white hover:border-white/25"
                     >
-                        <a href="/services">
+                        <Link href="/services">
                             Explore Services
                             <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-                        </a>
+                        </Link>
                     </Button>
                 </motion.div>
 
